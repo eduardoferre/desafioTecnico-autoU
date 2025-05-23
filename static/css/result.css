@@ -1,0 +1,143 @@
+/* Fonte global e fundo */
+body {
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+}
+
+
+
+/* Título */
+  h1 {
+    font-family: 'Courier New', monospace; /* Altere a fonte do h1 aqui */
+    font-size: 2rem; /* Tamanho do h1 */
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+
+/* Formulário/card resultado */
+.form-result {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  border: 1.5px solid #6c757d;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Labels */
+.form-label {
+  color:rgb(62, 143, 68);
+  font-weight: bold;
+}
+
+/* Texto original */
+.original-text {
+  background: #2a2a2a;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  white-space: pre-wrap;
+  border: 1px solid #555;
+  margin-bottom: 1rem;
+}
+
+/* Badge da classificação */
+.badge {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+}
+
+/* Badge colors */
+.bg-success {
+  background-color: #198754 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Textarea resposta */
+textarea#responseText {
+  background-color: #343a40;
+  color: #ffffff;
+  border: 1px solid #555;
+  height: 150px;
+  resize: none;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary {
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn-primary {
+  background-color: rgb(5, 77, 136);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(68, 103, 155);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Container dos botões */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.img-fluid {
+  width: 50px;
+  height: 50px;
+  object-fit: contain; /* mantém proporção sem distorcer */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .form-result {
+    max-width: 95%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  textarea#responseText {
+    height: 120px;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
