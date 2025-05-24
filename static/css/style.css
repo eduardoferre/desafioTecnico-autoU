@@ -1,21 +1,18 @@
-/* Fonte global (altere aqui se quiser outra) */
   body {
     color: #ffffff;
-    font-family: 'Arial', sans-serif; /* Altere para 'Roboto', 'Poppins', etc. */
+    font-family: 'Arial', sans-serif; 
   }
 
-  /* Fonte e tamanho do título */
   h1 {
-    font-family: 'Courier New', monospace; /* Altere a fonte do h1 aqui */
-    font-size: 2rem; /* Tamanho do h1 */
+    font-family: 'Courier New', monospace; 
+    font-size: 2rem; 
     font-weight: bold;
     color: #ffffff;
   }
 
 
-  /* Estilo do formulário */
   .bg-light {
-    background-color: #1e1e1e !important; /* Formulário escuro */
+    background-color: #1e1e1e !important; 
     color: #ffffff !important;
   }
 
@@ -26,7 +23,6 @@
     font-weight: bold;
   }
 
-  /* Inputs, textarea e select escuros */
   .form-control,
   .form-select,
   textarea,
@@ -37,7 +33,6 @@
     
   }
 
-  /* Cor do texto digitado */
   .form-control::placeholder,
   textarea::placeholder {
     color: #cccccc;
@@ -53,7 +48,6 @@
     box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
   }
 
-  /* Botão */
   .btn-primary {
     background-color:rgb(5, 77, 136);
     border: none;   
@@ -64,38 +58,32 @@
   }
 
 
-  /* Aumentar fonte e tamanho do botão */
 .btn-primary {
-    font-size: 1.25rem;  /* tamanho da fonte maior */
-    padding: 12px 30px;  /* aumentar área clicável */
+    font-size: 1.25rem;  
+    padding: 12px 30px;  
 }
 
-/* Adicionar borda no formulário */
 form.bg-light {
-    border: 1.5px solid #6c757d; /* borda verde, altere a cor se quiser */
-    box-sizing: border-box;    /* garante que padding + border não aumentem largura */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra */  
+    border: 1.5px solid #6c757d; 
+    box-sizing: border-box;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
 }
 
-/* Limita largura do formulário */
 form.bg-light {
   max-width: 700px;
 }
 
-/* Altura fixa do textarea */
 textarea.form-control {
   height: 300px !important;
-  /* !important para sobrescrever inline se houver */
 }
 
 .img-fluid {
   width: 50px;
   height: 50px;
-  object-fit: contain; /* mantém proporção sem distorcer */
+  object-fit: contain; 
 }
 
 
-/* --- Responsividade --- */
 
 @media (max-width: 768px) {
   form.bg-light {
@@ -104,7 +92,7 @@ textarea.form-control {
   }
   
   h1 {
-    font-size: 1.6rem; /* diminui tamanho do título em telas médias */
+    font-size: 1.6rem; 
   }
 }
 
@@ -120,6 +108,6 @@ textarea.form-control {
   }
 
   h1 {
-    font-size: 1.3rem; /* título menor em telas pequenas */
+    font-size: 1.3rem; 
   }
 }

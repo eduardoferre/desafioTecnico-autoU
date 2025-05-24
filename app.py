@@ -20,7 +20,6 @@ app = Flask(__name__)
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 app.secret_key = os.getenv('FLASK_SECRET_KEY')
-# Baixar os recursos necessários do NLTK
 
 
 stop_words = set(stopwords.words('portuguese'))  
@@ -32,7 +31,6 @@ def preProcessText(text):
     filtered = [stemmer.stem(w) for w in tokens if w.isalpha() and w not in stop_words]
     return " ".join(filtered)
 
-#Fazer uma função chamada extractTextFile que recebe como parametro um file e retorna o texto de acordo sendo txt ou pdf
 def extractTextFile(file):
     """Extrai texto de arquivos PDF ou TXT."""
     if file.filename.endswith('.pdf'):
@@ -128,7 +126,6 @@ def resultado():
         classification = classifyEmail(processed_text)
         response_text = generateResponse(classification, email_text)
 
-        # Guardar dados na sessão para GET após POST
         session['original_text'] = email_text
         session['classification'] = classification
         session['response_suggestion'] = response_text
@@ -138,7 +135,7 @@ def resultado():
                                classification=classification,
                                response_suggestion=response_text)
 
-    else:  # GET
+    else:  
         original_text = session.get('original_text')
         classification = session.get('classification')
         response_suggestion = session.get('response_suggestion')
