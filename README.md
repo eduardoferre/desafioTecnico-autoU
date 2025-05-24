@@ -66,7 +66,7 @@ O objetivo principal é liberar a equipe da empresa do trabalho manual de triage
 ```
 ├── app.py                  # Código principal Flask backend
 ├── Dockerfile              # Container Docker para a aplicação
-├── docker-compose.yml      # Container Docker para a aplicação
+├── docker-compose.yml      # Configuração do Docker Compose
 ├── requirements.txt        # Dependências Python
 ├── .env                    # Variáveis de ambiente (não versionado)
 ├── static/
@@ -77,7 +77,7 @@ O objetivo principal é liberar a equipe da empresa do trabalho manual de triage
 │   │   └── main.js      
 │   │   └── result.js      
 │   └── image/
-│       └── icone.svg       # Logo do sistema
+│       └── icone.svg       # Icone E-mail
 ├── templates/
 │   ├── index.html          # Página inicial/formulário
 │   └── resultado.html      # Página de resultados/classificação
