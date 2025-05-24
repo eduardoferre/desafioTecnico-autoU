@@ -97,7 +97,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 FLASK_SECRET_KEY=your_flask_secret_key_here
 ```
 
-3. Certifique-se de ter o Docker instalado.
+3. Certifique-se de ter o Docker, Python e suas dependências instaladas.
 
 4. Execute o comando para construir e rodar o container:
 
@@ -123,5 +123,3 @@ docker-compose up --build
 Para dúvidas ou contribuições, entre em contato.
 
 ---
-
-**Projeto desenvolvido para automatizar a triagem e resposta de emails com inteligência artificial, proporcionando economia de tempo e maior agilidade no atendimento.**
