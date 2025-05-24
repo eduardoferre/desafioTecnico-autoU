@@ -8,6 +8,16 @@ O objetivo principal é liberar a equipe da empresa do trabalho manual de triage
 
 ---
 
+### **Acesse a aplicação online**
+
+Acesse a aplicação de classificação de emails no seguinte link:
+
+🔗 [**Classificador de Emails - Deploy no Render**](https://desafiotecnico-autou.onrender.com/)
+
+---
+
+
+
 ## Funcionalidades
 
 - Upload de emails em formato PDF ou TXT, ou inserção direta do texto do email.
